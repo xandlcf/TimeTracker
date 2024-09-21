@@ -1,16 +1,27 @@
-# myapp
+# TimeTracker App
 
-A new Flutter project.
+## Usage
 
-## Getting Started
+**Home Screen:**
+- Displays a grid of activity categories.
+- Each category shows an associated icon, the category name, and the number of hours spent on that activity.
+- Tap on a category to add or update the hours spent on it.
 
-This project is a starting point for a Flutter application.
+**Add Category:**
+- Tap the "+" button to create a new category.
+- You can assign a name and select an icon from a predefined set of icons.
 
-A few resources to get you started if this is your first Flutter project:
+**Track Hours:**
+- For each category, tap to input the number of hours spent on that activity.
+- The hours are saved and displayed under the category.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Save Daily Log:**
+- At the bottom of the screen, press "Save Daily Log" to store the day's activity.
+- This resets the tracked hours for the next day, but the data is saved in the history.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**View History:**
+- Tap the clock icon in the app bar to view a list of daily logs.
+- The history shows the date and how many hours were spent on each activity.
+
+**Persistence:**
+- The app automatically saves categories, hours, and history using `SharedPreferences`, so the data remains even when the app is closed.
